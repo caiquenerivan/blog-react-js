@@ -6,6 +6,7 @@ import { Pesquisar } from "./pages/Pesquisar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { lightTheme, darkTheme } from "./tema/temas";
+import { Post } from "./pages/Post/{id}";
 
 const AppContainer = styled.div`
   text-align: center;
@@ -48,7 +49,7 @@ function App() {
                 path="/Pesquisar"
                 element={<Pesquisar />}
               />
-              <Route path="/post/:id" />
+              <Route path="/Post/:id" render={(props)=><Post id={props.id}/>}/>
             </Routes>
           </BrowserRouter>
         </ContentBox>

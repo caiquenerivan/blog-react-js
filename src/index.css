@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500;700&display=swap');
-
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
 *{
   transition: all 0.25s ease;
+  
 }
 body {
   margin: 0;
